@@ -27,7 +27,7 @@
           organization: Default
 
     - name: Debug
-      condition: event.payload.something == "hello"
+      condition: event.payload.something != "blabla"
       action:
         debug:
           msg: "DEBUG {{ event }}"
