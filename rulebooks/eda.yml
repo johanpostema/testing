@@ -23,11 +23,9 @@
       condition: event.payload.something == "hello"
       action:
 
-        - name: Run template
-          run_job_template:
+        - run_job_template:
           name: ping
           organization: Default
 
-        - name: Debug
-          debug:
-            msg: "event var: {{ event }}"
+        - debug:
+            msg: "event: {{ event }}"
