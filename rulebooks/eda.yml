@@ -12,3 +12,16 @@
       action:
         debug:
           msg: "rule is triggered TESTTT"
+
+    - name: Debug
+      condition: event.payload.something == "hello"
+      action:
+        debug:
+          msg: "event data: {{ event }}"
+
+    - name: run job template
+      condition: event.payload.something == "hello"
+      action:
+        run_job_template:
+          name: ping
+          organization: default
