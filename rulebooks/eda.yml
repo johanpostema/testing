@@ -1,5 +1,5 @@
 - name: Event driven ansible test
-  hosts: all
+  hosts: localhost
 
   sources:
     - ansible.eda.webhook:
