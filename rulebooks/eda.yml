@@ -30,4 +30,4 @@
       condition: event.payload.something != "blabla"
       action:
         debug:
-          msg: "DEBUG {{ event }}"
+          msg: "blablaDEBUG {{ event }}"
