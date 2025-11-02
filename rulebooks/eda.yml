@@ -22,6 +22,7 @@
     - name: run job template
       condition: event.payload.something == "hello"
       action:
-        run_job_template:
+
+        - run_job_template:
           name: ping
           organization: Default
