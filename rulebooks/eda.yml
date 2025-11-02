@@ -8,7 +8,7 @@
 
   rules:
     - name: Test
-      condition: event.something == "something"
+      condition: event.payload.something == "hello"
       action:
         debug:
           msg: "rule is triggered"
